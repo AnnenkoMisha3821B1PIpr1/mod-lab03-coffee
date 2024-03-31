@@ -25,7 +25,7 @@ public:
 	void choice(int Choice);
 	void check(int Check);
 	void cancel();
-	void cook(); // нужно ли тут int?
+	void cook(int num);
 	void finish();
 private:
 	int cash;
