@@ -15,7 +15,7 @@ if (state == OFF) {
 state = WAIT;
 cout << "Turn on machine" << endl;
 } else {
-cout << "Unavailable transition to a new state" << endl; 
+cout << "Unavailable transition to a new state" << endl;
 }
 }
 
@@ -72,11 +72,9 @@ state = CHECK;
 cout << "Successfully verified " << endl;
 
 } else {
-cout << "Not enough money. Missing amount: " 
-<< prices[Check - 1] - cash << endl;
+cout << "Not enough money. Missing amount: " << prices[Check - 1] - cash << endl;
 }
-}
-else {
+} else {
 cout << "Deposit money and choose a drink" << endl;
 }
 }
@@ -95,8 +93,7 @@ if (cash >= prices[num - 1] && state == CHECK) {
 state = COOK;
 cash -= prices[num - 1];
 cout << "Cook drink: " << menu[num - 1] << endl;
-}
-else {
+} else {
 cout << "Deposit money and choose a drink" << endl;
 }
 }
