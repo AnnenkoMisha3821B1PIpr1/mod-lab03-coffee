@@ -14,8 +14,7 @@ CoffeMachine.finish();
 CoffeMachine.off();
 }
 
-int main()
-{
+int main() {
 Automata coffeMachine;
 Work_Automata(coffeMachine);
 }
