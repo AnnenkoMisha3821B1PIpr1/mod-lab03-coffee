@@ -27,7 +27,7 @@ void cook(int num);
 void finish();
  private:
 int cash;
-string* menu;
+std::string* menu;
 int* prices;
 STATES state;
 };
