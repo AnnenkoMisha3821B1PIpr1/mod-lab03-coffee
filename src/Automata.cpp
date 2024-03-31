@@ -72,7 +72,8 @@ state = CHECK;
 cout << "Successfully verified " << endl;
 
 } else {
-cout << "Not enough money. Missing amount: " << prices[Check - 1] - cash << endl;
+cout << "Not enough money. Missing amount: "
+<< prices[Check - 1] - cash << endl;
 }
 } else {
 cout << "Deposit money and choose a drink" << endl;
