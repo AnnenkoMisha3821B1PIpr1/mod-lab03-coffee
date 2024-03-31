@@ -43,7 +43,8 @@ if (state != OFF && (state == WAIT || state == ACCEPT)) {
 int count = menu->length();
 std::cout << "MENU:" << std::endl;
 for (int i = 0; i < count; i++) {
-std::cout << "Title: " << menu[i] << "=> Price: " << prices[i] << "$" << std::endl;
+std::cout << "Title: " << menu[i] << "=> Price: "
+<< prices[i] << "$" << std::endl;
 }
 }
 }
