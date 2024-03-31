@@ -3,7 +3,7 @@
 
 Automata::Automata() {
 cash = 0;
-menu = new string[3]{ "Americano", "Cappuccino", "Latte" };
+menu = new std::string[3]{ "Americano", "Cappuccino", "Latte" };
 prices = new int[3] {6, 20, 10};
 state = OFF;
 }
