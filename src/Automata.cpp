@@ -8,7 +8,7 @@ Automata::Automata() {
 	state = OFF;
 }
 
-Automata::~Automata() { } // äåñòðóêòîð
+Automata::~Automata() { } // Ð´ÐµÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€
 
 void Automata::on() {
 	if (state == OFF) {
@@ -75,10 +75,11 @@ void Automata::check(int Check)
 	if (state == CHECK) {
 		if (cash >= prices[Check - 1]) {
 			state = CHECK;
-			cout << "Successfully entered" << endl;
+			cout << "Successfully verified " << endl;
+
 		} else {
-			cout << "Not enough money" << endl;
-			cout << "Missing amount: " << prices[Check - 1] - cash << endl;
+			cout << "Not enough money. Missing amount: " 
+				<< prices[Check - 1] - cash << endl;
 		}
 	}
 	else {
@@ -108,8 +109,8 @@ void Automata::cook(int num) {
 
 void Automata::finish() {
 	if (state == COOK) {
-		cout << "Your drink redy! Enjoy it!" << endl;
 		state = WAIT;
+		cout << "Your drink redy! Enjoy it!" << endl;
 	} else {
 		cout << "Not ready yet! Please wait!" << endl;
 	}
